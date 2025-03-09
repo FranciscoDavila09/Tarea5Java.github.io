@@ -56,7 +56,7 @@ function verificarDescuento() {
         document.getElementById("resultadoDescuento").innerText = "Ingrese un número válido.";
         return;
     }
-    if (edad >= 60) {
+    if (edad >= 18) {
         document.getElementById("resultadoDescuento").innerText = "Usted tiene un 10% de descuento.";
     } else {
         document.getElementById("resultadoDescuento").innerText = "No aplica descuento.";
