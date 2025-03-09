@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Delicias</title>
+    <link rel="stylesheet" href="defaul.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container my-4">
+    <h1 class="text-center text-custom">Bienvenidos a Panadería Delicias</h1>
+
+    <!-- Sección de Selección de Producto -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Seleccione su Pan Favorito</h5>
+            <select id="tipoPan" class="form-select">
+                <option value="">Seleccione un pan</option>
+                <option value="Baguette">Baguette</option>
+                <option value="Croissant">Croissant</option>
+                <option value="Rosquilla">Rosquilla</option>
+                <option value="Pan Integral">Pan Integral</option>
+            </select>
+            <button class="btn btn-primary mt-2" onclick="mostrarTipoPan()">Mostrar Tipo</button>
+            <p id="mensajePan" class="text-success mt-2"></p>
+        </div>
+    </div>
+
+    <!-- Sección de Control de Flujo -->
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Verificar Descuento por Edad</h5>
+            <button class="btn btn-success w-100" onclick="verificarDescuento()">Verificar</button>
+            <p id="resultadoDescuento" class="text-danger mt-2"></p>
+        </div>
+    </div>
+
+    <!-- Sección de Lista de Productos -->
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Lista de Productos Disponibles</h5>
+            <button class="btn btn-warning w-100" onclick="mostrarProductos()">Mostrar Productos</button>
+            <ul id="listaProductos" class="mt-2"></ul>
+        </div>
+    </div>
+
+    <!-- Sección de Cálculo de Precios -->
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Calcular Precio con IVA</h5>
+            <button class="btn btn-info w-100" onclick="calcularPrecio()">Calcular</button>
+            <p id="resultadoPrecio" class="mt-2 text-primary"></p>
+        </div>
+    </div>
+
+    <!-- Sección de Fecha y Hora -->
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Fecha y Hora Actual</h5>
+            <button class="btn btn-dark w-100" onclick="mostrarFechaHora()">Mostrar Fecha y Hora</button>
+            <p id="fechaHora" class="mt-2"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
